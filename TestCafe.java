@@ -19,27 +19,33 @@ public class TestCafe {
         // System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal());
         // System.out.println(streakGoalTest); 
         // System.out.println(cafeUtilObj.streakGoal()); 
-        System.out.printf("Purchases needed by week 10: %s \n\n", cafeUtilObj.streakGoalMthd(11));
+        System.out.printf("Purchases needed by week 10: %s \n\n", cafeUtilObj.streakGoalMthd(10));
     
         System.out.println("----- Order Total Test-----");
         double[] lineItems = {3.5, 1.5, 4.0, 4.5};
         System.out.printf("Order total: %s \n\n",cafeUtilObj.orderTotalMthd(lineItems));
         
-        // System.out.println("----- Display Menu Test-----");
+        System.out.println("----- Display Menu Test-----");
         
-        // ArrayList<String> menu = new ArrayList<String>();
-        // menu.add("drip coffee");
-        // menu.add("cappuccino");
-        // menu.add("latte");
-        // menu.add("mocha");
-        // appTest.displayMenu(menu);
+        ArrayList<String> menu = new ArrayList<String>();
+        menu.add("drip coffee");
+        menu.add("cappuccino");
+        menu.add("latte");
+        menu.add("mocha");
+        
+        
+        cafeUtilObj.displayMenuMthd(menu);
     
-        // System.out.println("\n----- Add Customer Test-----");
-        // ArrayList<String> customers = new ArrayList<String>();
+        System.out.println("\n----- Add Customer Test-----");
+
+        ArrayList<String> customerAL = new ArrayList<String>();
+
+        // cafeUtilObj.addCustomerMthd(customerAL);
+
         // // --- Test 4 times ---
-        // for (int i = 0; i < 4; i++) {
-        //     appTest.addCustomer(customers);
-        //     System.out.println("\n");
-        // }
+        for (int i = 0; i < 4; i++) {
+            cafeUtilObj.addCustomerMthd(customerAL);
+            System.out.println("\n");
+        }
     }
 }

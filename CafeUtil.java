@@ -38,4 +38,29 @@ public class CafeUtil {
         return orderTotal; 
     }
 
+    public String displayMenuMthd(ArrayList<String>  incomingArrayList) {
+
+        for (Integer i = 0; i < incomingArrayList.size(); i++){
+            // String comeOn = (String) i ; 
+            // + incomingArrayList.get(i); 
+            // System.out.println(i); 
+            // System.out.println(incomingArrayList.get(i)); 
+            System.out.println(i + " " + incomingArrayList.get(i)); 
+            
+        }
+
+        return "something here that doesn't matter b/c it doesn't go any further anyway";
+    }
+
+    public String addCustomerMthd(ArrayList<String> incomingArrayList) {
+        System.out.println("Please enter your name"); 
+        String userName = System.console().readLine();
+        System.out.println("hello " + userName + "!"); 
+        System.out.println("There are " + incomingArrayList.size() + " customer(s) in front of you."); 
+        incomingArrayList.add(userName); 
+
+
+        return "forgetAboutIt"; 
+    }
+
 }
